@@ -7,20 +7,20 @@ Introducing CRUD Operation: your go-to solution for managing data effortlessly. 
 
 Install my-project, simply clone the repository from GitHub or download the source code then, navigate to the project directory. Follow below steps
 
-### Navigate to Project Directory
+#### Navigate to Project Directory
 ```bash
   cd my-project
 ```
 
-### Install Dependencies
+#### Install Dependencies
 ```bash
   npm install
 ```
-### Install Dependencies
+#### Install Dependencies
 ```bash
   npm install
 ```
-### Start Server
+#### Start Server
 ```bash
   npm start
 ```
