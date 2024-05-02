@@ -17,6 +17,13 @@ const connectDB=async()=>{
     }
 }
 
+//writing middleware to pass req get response via API
+app.use(express.json())
+const operations = require('./routes/operations') 
+
+app.use("/api/operation", operations)
+
+
 // calling connect and passing port to establish the connection
 app.listen(process.env.PORT,()=>{
     connectDB()
