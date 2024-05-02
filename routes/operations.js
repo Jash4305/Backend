@@ -28,13 +28,28 @@ router.get('/', async (req, res) => {
     });
 
 
-//GET read api : to get a document by id
-
-
 //PUT update api : to update a document by id
+router.put("/update/:id",async (req,res)=>{
+    try{
+        const updatedAssistant = await assistant.findByIdAndUpdate(req.params.id,{$set:req.body},{new:true})
+        res.status(200).json(updatedAssistant)
+    }
+    catch(err){
+        res.status(500).json(err)
+    }
+});
 
 
 //DELETE delete api : to delete a document by id
+router.delete("/delete/:id",async (req,res)=>{
+    try{
+        await assistant.findByIdAndDelete(req.params.id)
+        res.status(200).json("Document has been deleted!")
+    }
+    catch(err){
+        res.status(500).json(err)
+    }
+});
 
 
 
