@@ -36,7 +36,7 @@ To run this project, you will need to add the following environment variables to
 
 ## Related
 
-Here is the video of the project
+Here is the 📽️ of the project
 
 [Video Link](https://drive.google.com/file/d/1VpCjwnkOphFUBTKcYGZaJDx-bCNArnLj/view?usp=drive_link)
 
